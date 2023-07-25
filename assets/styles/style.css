@@ -1,0 +1,20 @@
+:root {
+    --principal: #224E80;
+    --secundario: #805422;
+    --claro: #fcf9f3;
+    --oscuro: #000414;
+    --fuente: 'Lato', sans-serif;
+}
+
+body {
+    color: var(--oscuro);
+    font-family: var(--fuente);
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+textarea {
+    resize: none;
+}
