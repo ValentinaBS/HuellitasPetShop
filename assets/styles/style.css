@@ -1,11 +1,10 @@
-
 :root {
-    --principal: #224E80;
-    --secundario: #794D1A;
+    --principal: #224e80;
+    --secundario: #794d1a;
     --claro: #fcf9f3;
     --oscuro: #000414;
-    --fuente: 'Montserrat', sans-serif;
-    --titulos: 'Barlow Condensed', sans-serif;
+    --fuente: "Montserrat", sans-serif;
+    --titulos: "Barlow Condensed", sans-serif;
 }
 
 body {
@@ -32,15 +31,18 @@ textarea {
     resize: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--titulos);
 }
 
-[v-cloak]{
+[v-cloak] {
     display: none !important;
 }
 
-.layout{
+.layout {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -57,36 +59,16 @@ h1, h2, h3, h4 {
     width: 15rem;
 }
 
-.btn--carrito-comprar {
-
-.card>img {
-    width: 100%;
-    min-height: 55vh;
-    object-fit: contain;
-}
-
-.card {
-    margin-top: 1rem;
-    min-height: 60vh;
-    width: 70vw;
-}
-
-.card:hover {
-    border-color: #224E80;
-}
-
 .boton-agregar-carrito {
     color: var(--oscuro);
     border-radius: 1rem;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 .boton-agregar-carrito:hover {
-
     background-color: var(--principal);
     color: var(--claro);
 }
-
 
 .btn--carrito-comprar:hover {
     border: 1px solid var(--principal);
@@ -121,19 +103,121 @@ h1, h2, h3, h4 {
     height: 11rem;
 }
 
+header {
+    height: 10vh;
+}
+
+nav {
+    background-color: #224e80;
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.listfoot>li,
+p {
+    font-size: 11px;
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.listfoot>li a:hover {
+    text-decoration: underline;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.dropdown {
+    list-style: none;
+}
+
+.card-jyf {
+    object-fit: contain;
+    margin-top: 1rem;
+    min-height: 60vh;
+    width: 70vw;
+}
+
+.imagenes-jyf {
+    width: 100%;
+    height: 50vh;
+}
+
+.card:hover {
+    border-color: #224e80;
+}
+
 .cantidad {
     margin-top: 1rem;
     color: var(--claro);
     background-color: rgb(53, 141, 53);
     border-radius: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 6px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.buscador {
+    text-align: center;
+    border: 2px solid var(--principal);
+    border-radius: 6px;
+}
+
+::placeholder {
+    color: rgb(53, 141, 53);
+    font-size: 1.2rem;
+}
+
+.buscador:hover {
+    background-color: var(--principal);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .card {
+    .card-jyf {
         width: 40vw;
         min-height: 40vh;
+        object-fit: contain;
     }
 
     .card-contenedor {
@@ -145,9 +229,10 @@ h1, h2, h3, h4 {
 }
 
 @media only screen and (min-width: 1024px) {
-    .card {
+    .card-jyf {
         width: 20vw;
         min-height: 20vh;
+        object-fit: contain;
     }
 
     .card-contenedor {
@@ -156,75 +241,4 @@ h1, h2, h3, h4 {
         justify-content: center;
         gap: 2rem;
     }
-
-    .card>img {
-        width: 100%;
-        min-height: 60vh;
-        object-fit: contain;
-    }
 }
-
-header{
-    height: 10vh;
-}
-nav{
-    background-color: #224E80;
-}
-main{
-    height: 80vh;
-}
-footer {
-    
-    background-color: #f5f5f5;
-    padding: 20px 0;
-    color: #333;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-around;
-    
-  }
-  .footer-column h3 {
-    font-size: 15px;
-    margin-bottom: 15px;
-
-  }
-  
-  .footer-column p {
-    margin-bottom: 5px;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  .listfoot>li,p{
-    font-size: 11px;
-  }
-  
-  ul li a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .listfoot > li a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-media-icons img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .footer-bottom {
-    background-color: #ddd;
-    padding: 10px 0;
-    text-align: center;
-  }
-  .dropdown{
-    list-style: none;
-  }
-
