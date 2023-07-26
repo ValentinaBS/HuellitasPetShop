@@ -18,3 +18,62 @@ input, button, textarea, select {
 textarea {
     resize: none;
 }
+
+[v-cloak]{
+    display: none !important;
+}
+
+.layout{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen--pagos-carrito {
+    width: 5rem;
+}
+
+.imagen--gato-carrito {
+    width: 15rem;
+}
+
+.btn--carrito-comprar {
+    background-color: var(--principal);
+    color: var(--claro);
+}
+
+.btn--carrito-comprar:hover {
+    border: 1px solid var(--principal);
+    color: var(--principal);
+}
+
+.btn--carrito-borrar {
+    border: 2px solid var(--secundario);
+    color: var(--secundario);
+}
+
+.btn--carrito-borrar:hover {
+    background-color: var(--secundario);
+    color: var(--claro);
+}
+
+.card-header {
+    background-color: var(--principal);
+    color: var(--claro);
+}
+
+.texto--color-principal {
+    color: var(--principal);
+}
+
+.carrito-cantidad {
+    width: 1.7rem;
+}
+
+.carrito-imagen {
+    border: 1px inset var(--principal);
+    height: 11rem;
+}
