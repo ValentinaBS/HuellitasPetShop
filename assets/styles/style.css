@@ -11,12 +11,94 @@ body {
     color: var(--oscuro);
     font-family: var(--fuente);
 }
-input, button, textarea, select {
+
+input,
+button,
+textarea,
+select {
     font: inherit;
+}
+
+.main-productos {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 textarea {
     resize: none;
+}
+
+.card>img {
+    width: 100%;
+    min-height: 55vh;
+    object-fit: contain;
+}
+
+.card {
+    margin-top: 1rem;
+    min-height: 60vh;
+    width: 70vw;
+}
+
+.card:hover {
+    border-color: #224E80;
+}
+
+.boton-agregar-carrito {
+    color: var(--oscuro);
+    border-radius: 1rem;
+    border: 1px solid black
+}
+
+.boton-agregar-carrito:hover {
+    background-color: var(--principal);
+    color: var(--claro);
+}
+
+.cantidad {
+    margin-top: 1rem;
+    color: var(--claro);
+    background-color: rgb(53, 141, 53);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        width: 40vw;
+        min-height: 40vh;
+    }
+
+    .card-contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        width: 20vw;
+        min-height: 20vh;
+    }
+
+    .card-contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card>img {
+        width: 100%;
+        min-height: 60vh;
+        object-fit: contain;
+    }
 }
 
 header{
@@ -82,3 +164,4 @@ footer {
   .dropdown{
     list-style: none;
   }
+
