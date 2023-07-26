@@ -142,6 +142,13 @@ select {
         background-color: #000414;
     }
 
+    .fuente{
+        font-family: var(--fuente);
+    }
+    .titulo{
+        font-family: var(--titulos);
+    }
+
 textarea {
     resize: none;
 } 
