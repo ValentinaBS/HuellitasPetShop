@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(../images/blob-scene-haikei\ \(3\).svg);
+    background-image: url(../images/blob-scene-haikei\ \(4\).svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--oscuro);
@@ -30,56 +30,6 @@ select {
     flex-direction: column;
     align-items: center;
 }
-    :root {
-        --principal: #224E80;
-        --secundario: #805422;
-        --claro: #fcf9f3;
-        --oscuro: #000414;
-        --fuente: 'Barlow Condensed', sans-serif;
-    }
-    
-    [v-cloak]{
-        display: none !important;
-    }
-    
-    .layout{
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    body {
-        background-image: url(../images/blob-scene-haikei\ \(3\).svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: var(--oscuro);
-        color: var(--oscuro);
-        font-family: var(--fuente);
-    }
-    
-    input, button, textarea, select {
-        font: inherit;
-    }
-    
-    textarea {
-        resize: none;
-    }
-    
-      
-     
-    
-    
-    
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
     .oferta{
         border: solid red;
     }
