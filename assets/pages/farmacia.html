@@ -13,21 +13,29 @@
 </head>
 
 <body>
-    <main id="app" class="layout">
-        <div>
-            <form class="d-flex justify-content-center" role="search">
-                <input class="mt-2" type="search" placeholder="Buscar" v-model="inputSearch" aria-label="Search" />
-            </form>
-            {{filtroInputSearch}}
-            <template v-if="valueInputSearch.length > 0" v-for="event of valueInputSearch">
-                <div class="card d-flex align-items-center ">
-                    <img v-bind:src="event.imagen" class="card-img-top" alt="" />
-                    <section class="card-body text-center w-100">
-                        <h5>{{event.producto}}</h5>
+    <main id="app" class="main-productos">
+        <form class="d-flex justify-content-center" role="search">
+            <input class="mt-2" type="search" placeholder="Buscar" v-model="inputSearch" aria-label="Search" />
+        </form>
+        {{filtroInputSearch}}
+        <div class="card-contenedor">
+            <template v-if="valueInputSearch.length > 0" v-for="producto of valueInputSearch">
+                <div class="card d-flex align-items-center flex-wrap">
+                    <p class="cantidad"><span>Stock: {{producto.disponibles}}</span>
+                    </p>
+                    <img v-bind:src="producto.imagen" class="card-img-top" alt="" />
+                    <section class="card-body text-center d-flex flex-column justify-content-between w-100">
+                        <h5>{{producto.producto}}</h5>
                         <div>
                             <p class="fw-bold d-flex justify-content-around">
-                                <span class="parrafo-card">$ {{event.precio}}</span>
+                                <span class="parrafo-card">$ {{producto.precio}}</span>
                             </p>
+                            <button
+                                class="btn boton-agregar-carrito w-50 mx-auto mb-2 d-flex rounded-pill align-items-center justify-content-center gap-2 pillsizemin">
+                                <i class="bi bi-bag-plus"></i>
+                                <!-- <i class="bi bi-bag-plus-fill"></i> -->
+                                <span>Agregar</span>
+                            </button>
                             <!-- <a :href="'./pages/details.html?idEvent='+ event._id" class="btn btn-primary">Details</a> -->
                         </div>
                     </section>
