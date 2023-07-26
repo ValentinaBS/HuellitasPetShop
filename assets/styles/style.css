@@ -185,6 +185,11 @@ h4 {
     color: var(--claro);
 }
 
+.btn--carrito-comprar {
+    background-color: var(--principal);
+    color: var(--claro);
+}
+
 .btn--carrito-comprar:hover {
     border: 1px solid var(--principal);
     color: var(--principal);

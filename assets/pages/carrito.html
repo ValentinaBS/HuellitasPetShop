@@ -41,27 +41,30 @@
                                                 <h3 class="fw-bold">{{producto.producto}}</h3>
                                                 <p>Categoría: {{producto.categoria}}</p>
                                             </div>
-                                            <button v-on:click="removerProducto(producto)" class="btn btn--carrito-borrar mb-2">
+<!--                                             <button v-on:click="removerProducto(producto)" class="btn btn--carrito-borrar mb-2">
                                                 <i class="bi bi-x-lg"></i>
-                                            </button>
+                                            </button> -->
                                         </div>
     
                                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                             <div class="d-flex mb-4 align-items-center justify-content-center column-gap-4" style="max-width: 300px">
                                                 <button 
                                                     v-on:click="disminuirProducto(producto)"
-                                                    :disabled="producto.disponibles == 0 ? true : false" 
                                                     class="btn btn-lg btn--carrito-comprar"
                                                 >
                                                     <i class="bi bi-dash-lg"></i>
                                                 </button>
                                                 <span>{{producto.cantidadEnCarrito}}</span>
-                                                <button v-on:click="agregarProducto(producto)" class="btn btn-lg btn--carrito-comprar">
+                                                <button 
+                                                v-on:click="agregarProducto(producto)" 
+                                                class="btn btn-lg btn--carrito-comprar"
+                                                >
+                                                <!-- :disabled="producto.disponibles == 0 ? true : false"  -->
                                                     <i class="bi bi-plus-lg"></i>
                                                 </button>
                                             </div>
                                             <p class="text-start fs-4 text-md-center fw-bold">
-                                                ${{producto.precio}}
+                                                ${{producto.precio * producto.cantidadEnCarrito}}
                                             </p>
                                         </div>
                                     </div>
