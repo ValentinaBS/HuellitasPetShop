@@ -9,6 +9,9 @@
 
 
 body {
+    background-image: url(../images/blob-scene-haikei\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--oscuro);
     font-family: var(--fuente);
 }
@@ -27,6 +30,117 @@ select {
     flex-direction: column;
     align-items: center;
 }
+
+    .oferta{
+        border: solid red;
+    }
+    .btn {
+        
+        background: none;
+        border: 2px solid #fcf9f3;
+        font-size: 15px;
+        color: #000414;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #805422;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000414;
+       }
+       
+       .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #fcf9f3;
+        top: 50%;
+        transform: skewX(30deg) translate(-150%, -50%);
+        transition: all 0.5s;
+       }
+       
+       .btn:hover {
+        background-color: #224E80;
+        color: #fcf9f3;
+        box-shadow: 0 2px 0 2px #80b9f0;
+       }
+       
+       .btn:hover::before {
+        transform: skewX(30deg) translate(150%, -50%);
+        transition-delay: 0.1s;
+       }
+       
+       .btn:active {
+        transform: scale(0.9);
+       }
+       .title-word {
+        animation: color-animation 4s linear infinite;
+      }
+      
+      .title-word-1 {
+        --color-1: #a1c4ec;
+        --color-2: #ca873b;
+        --color-3: #E4A9A8;
+      }
+      
+      .title-word-2 {
+        --color-1: #ca873b;
+        --color-2: #ACCFCB;
+        --color-3: #a1c4ec;
+      }
+      
+      @keyframes color-animation {
+        0%    {color: var(--color-1)}
+        32%   {color: var(--color-1)}
+        33%   {color: var(--color-2)}
+        65%   {color: var(--color-2)}
+        66%   {color: var(--color-3)}
+        99%   {color: var(--color-3)}
+        100%  {color: var(--color-1)}
+      }
+      
+      /* Here are just some visual styles. 🖌 */
+      
+      .container {
+        display: grid;
+        place-items: center;  
+        text-align: center;
+        height: 15vh
+      }
+      
+      .title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+      }
+      .texto-facha{
+        background-image: linear-gradient(90deg, #e958ee, #571ae4);
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: background-size 800ms ease;
+    
+      }
+      .texto-facha:hover{
+        background-size: 100% 3px;
+      }
+      .bienv{
+        color: var(--claro);
+      }
+      .bienv2{
+        color: #fcf9f3!important;
+        font-size: 20px;
+        
+      }
+    .header{
+        background-image: url(../images/fede\ pets2.jpg);
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: #000414;
+    }
 
 textarea {
     resize: none;
