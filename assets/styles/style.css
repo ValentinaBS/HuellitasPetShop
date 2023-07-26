@@ -258,7 +258,6 @@ footer {
     margin-bottom: 15px;
 }
 
-  }
   .footer-column p{
     font-size: 11px;
   }
@@ -334,6 +333,9 @@ ul {
     background-color: var(--principal);
 }
 
+.imgContact{
+    width: 100%!important;
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .card-jyf {
         width: 40vw;

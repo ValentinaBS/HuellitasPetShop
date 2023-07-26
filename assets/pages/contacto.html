@@ -11,19 +11,30 @@
 </head>
 <body>
     <div id="app">
-    <header>
-        <nav>
-        
-          </nav>
-        
-    </header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">Huellitas 🐾 PetShop </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="./farmacia.html">Farmacia</a>
+                        <a class="nav-link" href="#">Juguetes</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
     <main class="d-flex flex-column align-items-center">
         <form @submit.prevent class="d-flex justify-content-center mt-5 pt-5">
             <div class="card mb-3 bgmain contacto" style="max-width: 90%;">
                 <div class="row">
                     <div class="col-md-6 d-flex">
-                        <img src="https://images.ecestaticos.com/pLQVcoBnO8k_gDOIvT8i4GIGY7U=/0x213:2271x1490/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F01d%2F9a6%2Fe7f%2F01d9a6e7f1dceffc79c2911bde677f3f.jpg" class="img-fluid object-fit-cover border rounded" alt="food_fair">
+                        <img src="https://images.ecestaticos.com/pLQVcoBnO8k_gDOIvT8i4GIGY7U=/0x213:2271x1490/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F01d%2F9a6%2Fe7f%2F01d9a6e7f1dceffc79c2911bde677f3f.jpg" class="imgContact col-md-6 img-fluid object-fit-cover border rounded" alt="food_fair">
                     </div>
                   <div class="col-md-6 ">
                     <div class="card-body">
@@ -44,7 +55,7 @@
                         </div>
                         <div class="row mt-2">
                             <div class="col">
-                                <input type="text" v-model="nombreMascota" class="form-control" id="nombreMascota" name="nombreMascota" placeholder="Nombre de tu mascota" required>
+                                <input type="text" v-model="nombreMascota" class="form-control" id="nombreMascota" name="nombreMascota" placeholder="Nombre mascota" required>
                                 </div>
                             <div class="col">
                                 <input type="text" v-model="tipoMascota"
@@ -63,9 +74,14 @@
                 </div>
             </div>
         </form> 
-        
-        <iframe class="col-10 mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.243040483404!2d-58.401195400000006!3d-34.5980153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9158e82c41%3A0x6a1cd58fa7e6383d!2sParaguay%202334%205%20f%2C%20C1121ABL%20CABA%2C%20Argentina!5e0!3m2!1ses!2sco!4v1690331346545!5m2!1ses!2sco" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        <div class="mt-5 mb-4 text-white">
+            <p class="h3 text-center">Visitanos!</p>
+            <p class="h5 text-center">Paraguay 2334 5 F. Buenos Aires, Argentina. </p>
+        </div>
+
+        <iframe class="col-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.243040483404!2d-58.401195400000006!3d-34.5980153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9158e82c41%3A0x6a1cd58fa7e6383d!2sParaguay%202334%205%20f%2C%20C1121ABL%20CABA%2C%20Argentina!5e0!3m2!1ses!2sco!4v1690331346545!5m2!1ses!2sco" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
       </main>
 
     <footer>
