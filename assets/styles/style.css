@@ -16,10 +16,7 @@ body {
     font-family: var(--fuente);
 }
 
-input,
-button,
-textarea,
-select {
+input, button,textarea,select {
     font: inherit;
 }
 
@@ -135,6 +132,7 @@ select {
         
     }
     .header{
+        
         background-image: url(../images/fede\ pets2.jpg);
         background-size: cover;
         background-position: 50%;
@@ -146,10 +144,7 @@ textarea {
     resize: none;
 } 
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3,h4 {
     font-family: var(--titulos);
 }
 
@@ -227,16 +222,18 @@ header {
     height: 10vh;
 }
 
-nav {
+.navbar {
     background-color: #224e80;
 }
 
 header{
     height: 10vh;
 }
-.nav{
+.navbar{
+    border: none;
     background-color: #224E80 !important;
-    color: #fcf9f3 ;
+    /* color: #fcf9f3 ; */
+    /* z-index: 1000; */
 }
 .nav-link{
     color: #fcf9f3 ;
@@ -272,15 +269,11 @@ footer {
         margin-bottom: 15px;
     }
 
-    .footer-column p{
-        font-size: 11px;
-    }
-    
+
     .footer-column img {
-        height: 6rem;
-        display: flex;
-        
-        font-family: sans-serif;
+    height: 6rem;
+    display: flex;
+    font-family: sans-serif;
     margin-bottom: 5px;
 
     }
@@ -358,7 +351,7 @@ ul {
         justify-content: center;
         gap: 2rem;
     }
-}
+    }
 
 @media only screen and (min-width: 1024px) {
     .card-jyf {
