@@ -1,9 +1,10 @@
 :root {
     --principal: #224E80;
-    --secundario: #805422;
+    --secundario: #794D1A;
     --claro: #fcf9f3;
     --oscuro: #000414;
-    --fuente: 'Lato', sans-serif;
+    --fuente: 'Montserrat', sans-serif;
+    --titulos: 'Barlow Condensed', sans-serif;
 }
 
 body {
@@ -17,6 +18,10 @@ input, button, textarea, select {
 
 textarea {
     resize: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--titulos);
 }
 
 [v-cloak]{
