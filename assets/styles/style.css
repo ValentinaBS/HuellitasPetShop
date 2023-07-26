@@ -147,12 +147,41 @@ body {
     color: #fcf9f3!important;
     
   }
-.header{
+  .perro{
+    width: 3rem;
+  }
+  .hover-switch > img {
+    position: absolute;
+    top: calc(80% - 100px);
+    left: calc(80% - 100px);
+  }
+  .hover-switch > img:last-of-type {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+  }
+  /* 
+   * Hide the last image on hover
+  */
+  .hover-switch:hover > img:last-of-type {
+    opacity: 0;
+  }
+  
+  /* .header{
+    background-image: url(../images/layered-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+/* .header{
     background-image: url(../images/fede\ pets2.jpg);
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-}
+    backdrop-filter: url(../images/fede\ pets2.jpg);
+    backdrop-filter: blur(2px);
+} */
+
   
    
      
