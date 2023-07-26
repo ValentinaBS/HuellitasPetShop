@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <div id="app">
+    <div >
         <header></header>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-around">
@@ -21,12 +21,13 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Acerca de Nosotros</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active" aria-current="page" href="#"></a> 
                         <a class="nav-link" href="./assets/pages/farmacia.html">Farmacia</a>
                         <a class="nav-link" href="./assets/pages/jueguetes.html">Juguetes</a>
                         <a class="nav-link" href="./assets/pages/contacto.html">Contacto</a>
+                        <a class="nav-link bi bi-cart" href="./assets/pages/carrito.html" id="cart-link"></a>
                     </div>
                     
                 </div>
@@ -35,23 +36,23 @@
         </nav>
 
         <main>
-            hola
+            
         </main>
 
-        <footer class="d-flex flex-column">
+        <footer class="d-flex flex-column col-md-12">
             <div class="footer-container">
 
-                <div class="footer-column">
+                <div class="footer-column w-25">
                     <img src="./assets/images/img-nav-foot/favicon-alt.png" class=" img-fluid " alt="">
                 </div>
-                <div class="footer-column font-weight-bold">
+                <div class="footer-column font-weight-bold col-md-4">
                     <h3>Información de contacto</h3>
                     <p>Teléfono: (123) 456-7890</p>
                     <p>Correo electrónico: huellitas@petshop.com</p>
                     <p>Dirección: Paraguay 2334 5 F</p>
                 </div>
                 
-                <div class="footer-column ">
+                <div class="footer-column col-md-1">
                 <h3>Síguenos en redes sociales</h3>
                 <ul class="social-media-icons d-flex justify-content-around">
                     <li><a href="#" target="_blank" class="bi bi-facebook"></a></li>
@@ -60,8 +61,8 @@
                 </ul>
             </div>
             </div>
-            <div class="footer-bottom">
-                <p>Derechos reservados &copy; 2023 Nombre de la empresa</p>
+            <div class="footer-bottom ">
+                <p>Derechos reservados &copy; 2023 Huellitas PetShop</p>
             </div>
         </footer>
 

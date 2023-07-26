@@ -21,11 +21,20 @@ header{
     background-color: #224E80 !important;
     color: #fcf9f3 ;
 }
+.nav-link{
+    color: #fcf9f3 ;
+}
+.navbar-toggler {
+    color: #fcf9f3;
+    background-color: #fcf9f3;
+    border-color: #fcf9f3;
+}
+
 .rounded{
     width: 15rem;
 }
 main{
-    height: 80vh;
+    min-height: 80vh;
 }
 footer {
     
@@ -55,6 +64,9 @@ footer {
     
     font-family: sans-serif;
     margin-bottom: 5px;
+  }
+  .footer-bottom{
+    font-size: 11px;
   }
   ul {
     list-style: none;
