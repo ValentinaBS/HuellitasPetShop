@@ -84,13 +84,13 @@ select {
         --color-2: #ca873b;
         --color-3: #E4A9A8;
     }
-      
+
     .title-word-2 {
         --color-1: #ca873b;
         --color-2: #ACCFCB;
         --color-3: #a1c4ec;
     }
-      
+
     @keyframes color-animation {
         0%    {color: var(--color-1)}
         32%   {color: var(--color-1)}
