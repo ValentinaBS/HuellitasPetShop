@@ -11,10 +11,40 @@ body {
     font-family: var(--fuente);
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
+}
+
+.layout {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 textarea {
     resize: none;
+}
+
+.card>img {
+    width: 100%;
+    min-height: 40vh;
+    object-fit: cover;
+}
+
+.card>img:hover {
+    transform: translateY(-10px);
+    filter: opacity(.5);
+}
+
+.card {
+    margin-top: 1rem;
+    min-height: 60vh;
+    width: 70vw;
+    background-color: var(--principal);
 }
