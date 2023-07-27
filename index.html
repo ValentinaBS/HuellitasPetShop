@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         {{ contadorCarrito }}
         <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-around col-12">
             <div class="nav container-fluid col-12">
@@ -94,16 +94,29 @@
                                 para mantener a sus
                                 leales amigos felices y saludables.</span>
                         </p>
-                        <figure>
+<!--                         <figure>
                             <img src="./assets/images/Lucre-pet.jpg" alt="Paltita">
                             <figcaption>Esta es PALTITA</figcaption>
-                        </figure>
+                        </figure> -->
                     </section>
                 </div>
                 <div
-                    class="d-flex flex-column gap-5 p-3 justify-content-center align-items-center align-content-center">
+                    class="d-flex flex-column gap-5 p-3 justify-content-center align-items-start align-items-md-center align-content-center">
                     <h2 class="title-word title-word-2 text-center">TESTIMONIOS</h2>
-                    <div class="wrapper d-flex flex-wrap gap-5 pb-5 pt-5 justify-content-center">
+                    <div class="info">
+                        <h4>Indiana - Pug</h4>
+                        <p>Ame mi juguete en forma de huesito!</p>
+                    </div>
+                    <div class="info">
+                        <h4>Obeso - Gato siamés</h4>
+                        <p>Compre comida de muy buena calidad y ahora estoy obeso D:</p>
+                    </div>
+                    <div class="info">
+                        <h4>Barto - Corgi</h4>
+                        <p>Tuve una patita lastimada y sus productos farmaceuticos me ayudaron a sanar!</p>
+
+                    </div>
+<!--                     <div class="wrapper d-flex flex-wrap gap-5 pb-5 pt-5 justify-content-center">
                         <div class="card"><img src="./assets/images/fede-pets.jpg" />
                             <div class="info">
                                 <h4>Testimonios: Indiana </h4>
@@ -124,7 +137,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </main>
 
