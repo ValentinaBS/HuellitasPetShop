@@ -473,7 +473,7 @@ footer {
         justify-content: space-around;
     }
 
-    .card {
+/*     .card {
         width: 280px;
         height: 360px;
         border-radius: 15px;
@@ -559,129 +559,9 @@ footer {
     .card .info button:hover {
         background: dodgerblue;
         color: white;
-    }
+    } */
 
-    .boton-detalles {
-        width: 15vw;
-    }
 
-    .body-productos {
-        height: 20vh;
-    }
-
-    .boton-agregar-carrito {
-        width: 15vw;
-    }
-
-.card-jyf {
-    object-fit: contain;
-    margin-top: 1rem;
-    min-height: 60vh;
-    width: 80vw;
-}
-
-.imagenes-jyf {
-    width: 100%;
-    height: 50vh;
-}
-
-.card:hover {
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-}
-
-.cantidad {
-    margin-top: 1rem;
-    color: var(--claro);
-    background-color: rgb(53, 141, 53);
-    border-radius: 15px;
-    padding: 6px;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.buscador {
-    text-align: center;
-    border: 2px solid var(--principal);
-    border-radius: 6px;
-}
-
-::placeholder {
-    font-size: 1.2rem;
-}
-
-.buscador:hover {
-    background-color: var(--principal);
-}
-
-.imgContact{
-    width: 100%!important;
-
-.boton-detalles {
-    padding: 2px;
-    border: none;
-    width: 40vw;
-}
-
-.imagen-detalles {
-    width: 40%;
-    border-radius: 4px;
-}
-
-.body-productos {
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contenedor-modal {
-    --bs-modal-width: 80vw;
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .card-jyf {
-        width: 40vw;
-        min-height: 40vh;
-        object-fit: contain;
-    }
-
-    .card-contenedor {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .boton-detalles {
-        width: 20vw;
-    }
-
-    .body-productos {
-        height: 20vh;
-    }
-
-    .boton-agregar-carrito {
-        width: 20vw;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .card-jyf {
-        width: 20vw;
-        min-height: 20vh;
-        object-fit: contain;
-    }
-
-    .card-contenedor {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-}
 .cat{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -706,11 +586,11 @@ figure {
     padding: .75rem;
     background: var(--c,#0009);
     clip-path: inset(0 var(--_i,100%) 0 0);
-    -webkit-mask:
+    --webkit-mask:
       linear-gradient(#000 0 0),
       linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    -webkit-mask-clip: text, padding-box;
+    --webkit-mask-composite: xor;
+    --webkit-mask-clip: text, padding-box;
     margin: -1px;
   }
   figure:hover figcaption{
@@ -721,7 +601,7 @@ figure {
   }
   @supports not (-webkit-mask-clip: text) {
     figure figcaption {
-     -webkit-mask: none;
+     --webkit-mask: none;
      color: #fff;
     }
   }
@@ -740,7 +620,7 @@ figure {
     justify-content: space-around;
   }
   
-  .card {
+/*   .card {
     width: 280px;
     height: 360px;
     border-radius: 15px;
@@ -816,21 +696,142 @@ figure {
   .card .info button:hover {
     background: dodgerblue;
     color: white;
-  }
+  } */
+
+
+.contenedor-carrito {
+    height: 100%;
+}
+
+.boton-detalles {
+    width: 15vw;
+}
+
+.body-productos {
+    height: 20vh;
+}
+
+.boton-agregar-carrito {
+    width: 30vw;
+}
+
+.card-jyf {
+object-fit: contain;
+margin-top: 1rem;
+min-height: 60vh;
+width: 80vw;
+}
+
+.imagenes-jyf {
+width: 100%;
+height: 50vh;
+}
+
+.card:hover {
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+transition: 0.5s;
+}
+
+.cantidad {
+margin-top: 1rem;
+color: var(--claro);
+background-color: rgb(53, 141, 53);
+border-radius: 15px;
+padding: 6px;
+font-weight: 700;
+font-size: 15px;
+}
+
+.buscador {
+text-align: center;
+border: 2px solid var(--principal);
+border-radius: 6px;
+}
+
+::placeholder {
+font-size: 1.2rem;
+}
+
+.buscador:hover {
+background-color: var(--principal);
+}
+
+.imgContact{
+width: 100%!important;}
+
+.boton-detalles {
+padding: 2px;
+border: none;
+width: 40vw;
+}
+
+.imagen-detalles {
+width: 40%;
+border-radius: 4px;
+}
+
+.body-productos {
+height: 20vh;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.contenedor-modal {
+--bs-modal-width: 80vw;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.card-jyf {
+    width: 40vw;
+    min-height: 40vh;
+    object-fit: contain;
+}
+
+.card-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.boton-detalles {
+    width: 20vw;
+}
+
+.body-productos {
+    height: 20vh;
+}
+
+.boton-agregar-carrito {
+    width: 20vw;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+    .card-jyf {
+        width: 20vw;
+        min-height: 20vh;
+        object-fit: contain;
+    }
+
+    .card-contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
 
     .boton-detalles {
         width: 15vw;
     }
-
+    
     .body-productos {
         height: 20vh;
     }
-
+    
     .boton-agregar-carrito {
         width: 15vw;
     }
-
-}
-.contenedor-carrito {
-    height: 100%;
 }
