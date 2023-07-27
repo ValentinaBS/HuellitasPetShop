@@ -6,7 +6,7 @@ createApp({
             todosLosObjetos: [],
             productosFarmacia: [],
             inputSearch: "",
-            valueInputSearch: "",
+            valueInputSearch: [],
             carrito: [],
             cantidadTotalProductos: 0,
             totalPrecio: 0,

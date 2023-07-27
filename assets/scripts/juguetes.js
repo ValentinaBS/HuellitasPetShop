@@ -4,18 +4,19 @@ createApp({
     data() {
         return {
             todosLosObjetos: [],
-            productosJuguetes: [],
+            productosJugueteria: [],
             inputSearch: "",
-            valueInputSearch: "",
+            valueInputSearch: [],
             carrito: [],
             cantidadTotalProductos: 0,
-            totalPrecio: 0
+            totalPrecio: 0,
+            productoDetalle: undefined,
         }
     },
     created() {
         if (localStorage.getItem('carrito') !== null) {
             this.cantidadTotalProductos = JSON.parse(localStorage.getItem('cantidadTotalProductos'))
-            this.productosJuguetes = JSON.parse(localStorage.getItem('productosJuguetes'))
+            this.productosJugueteria = JSON.parse(localStorage.getItem('productosJugueteria'))
             this.carrito = JSON.parse(localStorage.getItem('carrito'))
             this.totalPrecio = JSON.parse(localStorage.getItem('totalPrecio'))
         } else {
@@ -23,12 +24,16 @@ createApp({
                 .then((data) => data.json())
                 .then((data) => {
                     this.todosLosObjetos = data;
-                    this.productosJuguetes = this.todosLosObjetos.filter(elemento => elemento.categoria.includes("jugueteria"))
+                    this.productosJugueteria = this.todosLosObjetos.filter(elemento => elemento.categoria.includes("jugueteria"))
+                    console.log(this.productosJugueteria)
                 })
                 .catch((error) => console.error(error.message));
         }
     },
     methods: {
+        mostrarDetalle(producto) {
+            this.productoDetalle = producto
+        },
         agregarProducto(prod) {
             if (prod.disponibles > 0) {
                 if (this.carrito.find(producto => producto._id == prod._id)) {
@@ -38,7 +43,7 @@ createApp({
                             producto.disponibles--
                         }
                     })
-                    this.productosFarmacia.forEach(producto => {
+                    this.productosJugueteria.forEach(producto => {
                         if (producto._id == prod._id) {
                             producto.cantidadEnCarrito++
                             producto.disponibles--
@@ -52,7 +57,7 @@ createApp({
                             producto.disponibles--
                         }
                     })
-                    this.productosFarmacia.forEach(producto => {
+                    this.productosJugueteria.forEach(producto => {
                         if (producto._id == prod._id) {
                             producto.cantidadEnCarrito = 1
                             producto.disponibles--
@@ -60,8 +65,10 @@ createApp({
                     })
                 }
             }
+
             this.actualizarTotal();
-            localStorage.setItem('productosFarmacia', JSON.stringify(this.productosFarmacia))
+
+            localStorage.setItem('productosJugueteria', JSON.stringify(this.productosJugueteria))
             localStorage.setItem('carrito', JSON.stringify(this.carrito))
             localStorage.setItem('cantidadTotalProductos', JSON.stringify(this.cantidadTotalProductos))
             localStorage.setItem('totalPrecio', JSON.stringify(this.totalPrecio))
@@ -72,7 +79,7 @@ createApp({
     },
     computed: {
         filtroInputSearch() {
-            this.valueInputSearch = this.productosFarmacia.filter(producto => {
+            this.valueInputSearch = this.productosJugueteria.filter(producto => {
                 return producto.producto.toLowerCase().includes(this.inputSearch.toLowerCase())
             })
         },
@@ -81,3 +88,4 @@ createApp({
         }
     },
 }).mount("#app");
+

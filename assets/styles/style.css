@@ -185,6 +185,10 @@ h1, h2, h3,h4 {
     font-family: var(--titulos);
 }
 
+li {
+    list-style-type: none;
+}
+
 [v-cloak] {
     display: none !important;
 }
@@ -537,7 +541,6 @@ figure {
     display : flex;
     align-items : center;
     justify-content : center;
-    flex-wrap : wrap;
     padding : 30px;  
   }
   
