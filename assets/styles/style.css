@@ -256,6 +256,7 @@ footer {
     background-color: #224E80;
     padding: 20px 0;
     color: #fcf9f3;
+    width: 100%;
     }
     
     .footer-container {
@@ -285,6 +286,14 @@ footer {
     border-top: solid 1px #5e90ec;
     padding:15px;
     }
+
+.bi-facebook, .bi-twitter, .bi-instagram {
+    color: var(--claro)
+}
+
+.bi-facebook:hover, .bi-twitter:hover, .bi-instagram:hover {
+    color: var(--secundario)
+}
 
 ul {
     list-style: none;
