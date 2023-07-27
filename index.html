@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Huellitas | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         {{ contadorCarrito }}
         <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-around col-12">
             <div class="nav container-fluid col-12">
@@ -28,7 +32,7 @@
                     <div class="navbar-nav ">
                         <a class="nav-link active" aria-current="page" href="#"></a>
                         <a class="nav-link" href="./assets/pages/farmacia.html">Farmacia</a>
-                        <a class="nav-link" href="./assets/pages/jueguetes.html">Juguetes</a>
+                        <a class="nav-link" href="./assets/pages/juguetes.html">Juguetes</a>
                         <a class="nav-link" href="./assets/pages/contacto.html">Contacto</a>
                         <a class="nav-link bi bi-cart" href="./assets/pages/carrito.html" id="cart-link">
                             <span> {{ cantidadTotalProductos }} </span>
@@ -90,16 +94,29 @@
                                 para mantener a sus
                                 leales amigos felices y saludables.</span>
                         </p>
-                        <figure>
+<!--                         <figure>
                             <img src="./assets/images/Lucre-pet.jpg" alt="Paltita">
                             <figcaption>Esta es PALTITA</figcaption>
-                        </figure>
+                        </figure> -->
                     </section>
                 </div>
                 <div
-                    class="d-flex flex-column gap-5 p-3 justify-content-center align-items-center align-content-center">
+                    class="d-flex flex-column gap-5 p-3 justify-content-center align-items-start align-items-md-center align-content-center">
                     <h2 class="title-word title-word-2 text-center">TESTIMONIOS</h2>
-                    <div class="wrapper d-flex flex-wrap gap-5 pb-5 pt-5 justify-content-center">
+                    <div class="info">
+                        <h4>Indiana - Pug</h4>
+                        <p>Ame mi juguete en forma de huesito!</p>
+                    </div>
+                    <div class="info">
+                        <h4>Obeso - Gato siamés</h4>
+                        <p>Compre comida de muy buena calidad y ahora estoy obeso D:</p>
+                    </div>
+                    <div class="info">
+                        <h4>Barto - Corgi</h4>
+                        <p>Tuve una patita lastimada y sus productos farmaceuticos me ayudaron a sanar!</p>
+
+                    </div>
+<!--                     <div class="wrapper d-flex flex-wrap gap-5 pb-5 pt-5 justify-content-center">
                         <div class="card"><img src="./assets/images/fede-pets.jpg" />
                             <div class="info">
                                 <h4>Testimonios: Indiana </h4>
@@ -120,7 +137,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </main>
 
@@ -151,9 +168,7 @@
             </footer>
 
         </div>
-        <!-- header con button para ofertas|
-        caracteristicas importantes para comprar en nuestro petshop
-            pre-footer con testimonios -->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
