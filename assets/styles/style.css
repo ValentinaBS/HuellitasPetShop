@@ -20,10 +20,10 @@ input, button,textarea,select {
     align-items: center;
 }
 body {
-    background-image: url(../images/blob-scene-haikei\ \(4\).svg);
+    background-image: url(../images/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 900vh;
+
     color: var(--oscuro);
     font-family: var(--fuente);
 }
@@ -169,14 +169,6 @@ body {
 
 }
 
-.header {
-    background-image: url(../images/fede\ pets2.jpg);
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-color: #000414;
-}
-
 textarea {
     resize: none;
 }
@@ -297,6 +289,7 @@ footer {
 .footer-column img {
     height: 6rem;
     display: flex;
+}
 
 .navbar{
     border: none;
@@ -626,4 +619,7 @@ figure {
     .boton-agregar-carrito {
         width: 15vw;
     }
+}
+.contenedor-carrito {
+    height: 100%;
 }

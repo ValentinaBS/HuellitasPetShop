@@ -3,9 +3,18 @@ createApp({
     data(){
         return{
             mailUsuario:     "",
+            carrito: [],
+            cantidadTotalProductos: 0,
+        }
+    },
+    created(){
+        if (localStorage.getItem('carrito') != null) {
+            this.cantidadTotalProductos = JSON.parse(localStorage.getItem('cantidadTotalProductos'))
+            this.carrito = JSON.parse(localStorage.getItem('carrito'))
         }
     },
     methods: {
+        
         modal (){ 
             if (this.validarMail()){
                 Swal
@@ -27,5 +36,10 @@ createApp({
         validarMail() {
             return /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/.test(this.mailUsuario)
         },
+    },
+    computed: {
+        contadorCarrito() {
+            this.cantidadTotalProductos = this.carrito.reduce((acc, producto) => acc + producto.cantidadEnCarrito, 0);
+        }
     },
 }).mount('#app')
