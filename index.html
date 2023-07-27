@@ -16,18 +16,21 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-around col-12">
             <div class="nav container-fluid col-12">
                 <div>
-                <a class="navbar-brand" href="#"><img src="./assets/images/img-nav-foot/logo-alt.png" class="rounded float-right img-fluid " alt="..."></a>
+                    <a class="navbar-brand" href="#"><img src="./assets/images/img-nav-foot/logo-alt.png"
+                            class="rounded float-right img-fluid " alt="..."></a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav ">
-                        <a class="nav-link active" aria-current="page" href="#"></a> 
+                        <a class="nav-link active" aria-current="page" href="#"></a>
                         <a class="nav-link" href="./assets/pages/farmacia.html">Farmacia</a>
                         <a class="nav-link" href="./assets/pages/jueguetes.html">Juguetes</a>
                         <a class="nav-link" href="./assets/pages/contacto.html">Contacto</a>
-                        <a class="nav-link bi bi-cart" href="./assets/pages/carrito.html" id="cart-link" >
+                        <a class="nav-link bi bi-cart" href="./assets/pages/carrito.html" id="cart-link">
                             <span> {{ cantidadTotalProductos }} </span>
                         </a>
                     </div>
@@ -35,70 +38,125 @@
 
             </div>
         </nav>
-        <div class="layout d-flex flex-column align-items-center justify-content-center">
-            <header class="header col-12 rounded">
-                <div class="container">
-                    <h2 class="title">
+        <div class="layout d-flex flex-wrap align-items-center justify-content-center">
+            <header class="header col-12 rounded container-fluid">
+
+                <div class=" d-flex justify-content-center">
+                    <h2 class="title pt-5 pb-5">
                         <span class="title-word title-word-1">Somos</span>
                         <span class="title-word title-word-2">HUELLITAS</span>
                     </h2>
                 </div>
-                <article class=" d-flex justify-content-evenly align-items-center">
-                    <div class="mb-3 col-5">
-                        <div class="card-body">
-                            <h4 class="rounded bienv">¡Bienvenido a Huellitas, donde las mascotas dejan su <span
-                                    class="texto-facha">huella en
-                                    nuestros corazones!</span> 🐾</h4>
-                                    <div class="col-5 col-xl-2 col-md-2">
-                        <a href="#" class="btn w-100">OFERTAS</a>
-                        <!-- <a href="./index.html"><button class="btn w-100">OFERTAS
-                            </button></a> -->
-                    </div>
+                <article class="d-flex align-items-center justify-content-evenly">
+                    <section class=" mb-3 col-12">
+                        <div
+                            class="card-body col-xl-12 col-md-12 col-12 d-flex flex-wrap align-items-center gap-3 pt-3 justify-content-evenly">
+                            <p class="rounded fs-6 fw-bold text-black bienv">En Huellitas, sabemos que tus
+                                mascotas
+                                son más
+                                que
+                                simples animales, son miembros queridos de tu familia.<span class="texto-facha"> Por eso
+                                    te
+                                    ofrecemos estas ofertas en jueguetes</span> 🐾</p>
+                            <div class="col-5 col-xl-2 col-md-2">
+                                <a href="./assets/pages/jueguetes.html" class="btn w-100">JUGUETES</a>
+                            </div>
+                            <p class="rounded fs-6 fw-bold text-black bienv">También su bienestar y
+                                salud son nuestra máxima prioridad. Tenemos productos seleccionados <span
+                                    class="texto-facha2">para brindarte soluciones
+                                    efectivas y confiables</span>🐾</p>
+                            <div class="col-5 col-xl-2 col-md-2">
+                                <a href="./assets/pages/farmacia.html" class="btn w-100">FARMACIA</a>
+                            </div>
+                        </div>
+                    </section>
                 </article>
-                
             </header>
-    
-            <main class="d-flex flex-grow-1 align-items-center justify-content-center">
-                <article class="d-flex flex-wrap align-items-center justify-content-center">
-                    <p class="bienv2 col-9">
-                        Nuestra historia comenzó con un amor incondicional por los animales y el deseo de crear un espacio
-                        donde los dueños de mascotas como tú puedan encontrar todo lo que necesitan para mantener a sus
-                        leales amigos felices y saludables.
-                    </p>
-                    <div class=" d-flex justify-content-center">
-                        <img class="col-7 col-md-3 col-xl-3 rounded" src="./assets/images/Lucre pet.jpg" alt="gato_siames">
-                    </div>
-                </article>
-            </main>
-        
-        <footer class="d-flex flex-column col-12 ">
-            <div class="footer-container d-flex flex-column flex-md-row px-3">
-                <div class="footer-column col-md-3 col-sm-6">
-                    <img src="./assets/images/img-nav-foot/favicon-alt.png" class=" img-fluid " alt="">
-                </div>
-                <div class="footer-column font-weight-bold col-md-4 col-sm-6">
-                    <h3>Información de contacto</h3>
-                    <p>Teléfono: (123) 456-7890</p>
-                    <p>Correo electrónico: huellitas@petshop.com</p>
-                    <p>Dirección: Paraguay 2334 5 F</p>
-                </div>
-                <div class="footer-column col-md-2 col-sm-6 d-flex flex-column  justify-content-around">
-                <ul class="social-media-icons d-flex justify-content-evenly">
-                    <li><a href="#" target="_blank" class="bi bi-facebook"></a></li>
-                    <li><a href="#" target="_blank" class="bi bi-twitter"></a></li>
-                    <li><a href="#" target="_blank" class="bi bi-instagram"></a></li>
-                </ul>
-                </div>
-            </div>
-            <div class="footer-bottom mt-4">
-            <p>Derechos reservados &copy; 2023 Huellitas PetShop</p>
-            </div>
-        </footer>
-    </div>
+            <!-- ounded fs-6 fw-bold text-black bienv //// class="card-body col-xl-12 col-md-12 col-12 d-flex flex-wrap align-items-center pt-3 justify-content-evenly" -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+            <main
+                class="container-fluid d-flex flex-column align-items-center pt-5 gap-5 justify-content-center col-12">
+                <div>
+                    <section
+                        class="container-fluid flex-wrap position-relative d-flex align-items-center pt-5 gap-5 justify-content-center col-12">
+                        <h3 class="position-absolute top-0 start-50 translate-middle title-word title-word-2">NOSOTROS
+                        </h3>
+
+                        <p class="fs-6 fw-bold text-black col-6">
+                            Nuestra historia comenzó con un amor incondicional por los animales y el deseo de
+                            crear un espacio
+                            <span class="texto-facha"> donde los dueños de mascotas como tú puedan encontrar todo lo que
+                                necesitan
+                                para mantener a sus
+                                leales amigos felices y saludables.</span>
+                        </p>
+                        <figure>
+                            <img src="./assets/images/Lucre-pet.jpg" alt="Paltita">
+                            <figcaption>Esta es PALTITA</figcaption>
+                        </figure>
+                    </section>
+                </div>
+                <div
+                    class="d-flex flex-column gap-5 p-3 justify-content-center align-items-center align-content-center">
+                    <h2 class="title-word title-word-2 text-center">TESTIMONIOS</h2>
+                    <div class="wrapper d-flex flex-wrap gap-5 pb-5 pt-5 justify-content-center">
+                        <div class="card"><img src="./assets/images/fede-pets.jpg" />
+                            <div class="info">
+                                <h4>Testimonios: Indiana </h4>
+                                <p>Ame mi juguete en forma de huesito!</p>
+
+                            </div>
+                        </div>
+                        <div class="card"><img src="./assets/images/gatitoNico.png" />
+                            <div class="info">
+                                <h4>Testimonios: Obeso</h4>
+                                <p>Compre comida de muy buena calidad y ahora estoy obesoD:</p>
+                            </div>
+                        </div>
+                        <div class="card"><img src="./assets/images/fede-pets2.jpg" />
+                            <div class="info">
+                                <h4>Testimonios: Barto</h4>
+                                <p>Tuve una patita lastimada y sus productos farmaceuticos me ayudaron a sanar!</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="d-flex flex-column col-12 ">
+                <div class="footer-container d-flex flex-column flex-md-row px-3">
+
+                    <div class="footer-column col-md-3 col-sm-6">
+                        <img src="./assets/images/img-nav-foot/favicon-alt.png" class=" img-fluid " alt="">
+                    </div>
+                    <div class="footer-column font-weight-bold col-md-4 col-sm-6">
+                        <h3>Información de contacto</h3>
+                        <p>Teléfono: (123) 456-7890</p>
+                        <p>Correo electrónico: huellitas@petshop.com</p>
+                        <p>Dirección: Paraguay 2334 5 F</p>
+                    </div>
+
+                    <div class="footer-column col-md-2 col-sm-6 d-flex flex-column  justify-content-around">
+                        <ul class="social-media-icons d-flex justify-content-evenly">
+                            <li><a href="#" target="_blank" class="bi bi-facebook"></a></li>
+                            <li><a href="#" target="_blank" class="bi bi-twitter"></a></li>
+                            <li><a href="#" target="_blank" class="bi bi-instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom mt-4">
+                    <p>Derechos reservados &copy; 2023 Huellitas PetShop</p>
+                </div>
+            </footer>
+
+        </div>
+        <!-- header con button para ofertas|
+        caracteristicas importantes para comprar en nuestro petshop
+            pre-footer con testimonios -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="assets/scripts/home.js"></script>
 </body>
