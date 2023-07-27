@@ -129,20 +129,7 @@ body {
     .bienv2{
         color: #fcf9f3!important;
         font-size: 20px;
-      }
-
-    66% {
-        color: var(--color-3)
     }
-
-    99% {
-        color: var(--color-3)
-    }
-
-    100% {
-        color: var(--color-1)
-    }
-}
 
 /* Here are just some visual styles. 🖌 */
 
@@ -550,7 +537,7 @@ figure {
     display : flex;
     align-items : center;
     justify-content : center;
-    flex-warp : warp;
+    flex-wrap : wrap;
     padding : 30px;  
   }
   
