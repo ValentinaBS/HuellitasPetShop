@@ -227,13 +227,13 @@ header {
 }
 
 header{
-    height: 10vh;
+    min-height: 10vh;
 }
 .navbar{
     border: none;
     background-color: #224E80 !important;
     /* color: #fcf9f3 ; */
-    /* z-index: 1000; */
+   /*  z-index: 1000; */
 }
 .nav-link{
     color: #fcf9f3 ;
@@ -248,11 +248,11 @@ header{
     width: 15rem;
 }
 main{
-    min-height: 80vh;
+    min-height: 75vh;
 }
 
 footer {
-    
+    min-height: 25vh;
     background-color: #224E80;
     padding: 20px 0;
     color: #fcf9f3;
@@ -265,10 +265,12 @@ footer {
     }
     .footer-column h3 {
         font-family: sans-serif;
-        font-size: 15px;
+        font-size: 12px;
         margin-bottom: 15px;
     }
-
+    .footer-column p{
+        font-size: 11px;
+    }
 
     .footer-column img {
     height: 6rem;
@@ -279,6 +281,9 @@ footer {
     }
     .footer-bottom{
     font-size: 11px;
+    text-align: center;
+    border-top: solid 1px #5e90ec;
+    padding:15px;
     }
 
 ul {
@@ -286,12 +291,12 @@ ul {
     padding: 0;
     }
 
-    .footer-bottom {
+    /* .footer-bottom {
     background-color: #ddd;
     color: #000414;
     padding: 10px 0;
     text-align: center;
-}
+} */
 
 .dropdown {
     list-style: none;
