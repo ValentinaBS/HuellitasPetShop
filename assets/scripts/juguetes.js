@@ -67,7 +67,6 @@ createApp({
             }
 
             this.actualizarTotal();
-
             localStorage.setItem('productosJugueteria', JSON.stringify(this.productosJugueteria))
             localStorage.setItem('carrito', JSON.stringify(this.carrito))
             localStorage.setItem('cantidadTotalProductos', JSON.stringify(this.cantidadTotalProductos))
