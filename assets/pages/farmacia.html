@@ -13,23 +13,28 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand">Huellitas 🐾 PetShop </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Farmacia</a>
-                    <a class="nav-link" href="./jueguetes.html">Juguetes</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-around col-12">
+            <div class="nav container-fluid col-12">
+                <div>
+                <a class="navbar-brand" href="#"><img src="./assets/images/img-nav-foot/logo-alt.png" class="rounded float-right img-fluid " alt="..."></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active" aria-current="page" href="#"></a> 
+                        <a class="nav-link" href="./assets/pages/farmacia.html">Farmacia</a>
+                        <a class="nav-link" href="./assets/pages/jueguetes.html">Juguetes</a>
+                        <a class="nav-link" href="./assets/pages/contacto.html">Contacto</a>
+                        <a class="nav-link bi bi-cart" href="./assets/pages/carrito.html" id="cart-link" >
+                            <span> {{ cantidadTotalProductos }} </span>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <main id="app" class="main-productos">
         <form class="d-flex justify-content-center" role="search">
             <input class="mt-2 buscador" type="search" placeholder="Buscar" v-model="inputSearch" aria-label="Search" />

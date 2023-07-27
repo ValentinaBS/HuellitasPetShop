@@ -11,20 +11,25 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand">Huellitas 🐾 PetShop </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-around col-12">
+            <div class="nav container-fluid col-12">
+                <div>
+                <a class="navbar-brand" href="#"><img src="../images/img-nav-foot/logo-alt.png" class="rounded float-right img-fluid " alt="..."></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="./farmacia.html">Farmacia</a>
-                        <a class="nav-link" href="#">Juguetes</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active" aria-current="page" href="#"></a> 
+                        <a class="nav-link" href="../pages/farmacia.html">Farmacia</a>
+                        <a class="nav-link" href="../pages/jueguetes.html">Juguetes</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link bi bi-cart" href="#" id="cart-link" >
+                            <span> {{ cantidadTotalProductos }} </span>
+                        </a>
                     </div>
+                    
                 </div>
             </div>
         </nav>
@@ -85,8 +90,32 @@
         
       </main>
 
-    <footer>
+      <footer class="d-flex flex-column col-12 ">
+        <div class="footer-container d-flex flex-column flex-md-row px-3">
+
+            <div class="footer-column col-md-3 col-sm-6">
+                <img src="../images/img-nav-foot/favicon-alt.png" class=" img-fluid " alt="">
+            </div>
+            <div class="footer-column font-weight-bold col-md-4 col-sm-6">
+                <h3>Información de contacto</h3>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Correo electrónico: huellitas@petshop.com</p>
+                <p>Dirección: Paraguay 2334 5 F</p>
+            </div>
+            
+            <div class="footer-column col-md-2 col-sm-6 d-flex flex-column  justify-content-around">
+            <ul class="social-media-icons d-flex justify-content-evenly">
+                <li><a href="#" target="_blank" class="bi bi-facebook"></a></li>
+                <li><a href="#" target="_blank" class="bi bi-twitter"></a></li>
+                <li><a href="#" target="_blank" class="bi bi-instagram"></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-bottom mt-4">
+        <p>Derechos reservados &copy; 2023 Huellitas PetShop</p>
+        </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
