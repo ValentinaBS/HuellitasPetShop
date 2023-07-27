@@ -427,6 +427,9 @@ ul {
     background-color: var(--principal);
 }
 
+.imgContact{
+    width: 100%!important;
+
 .boton-detalles {
     padding: 2px;
     border: none;
@@ -446,6 +449,7 @@ ul {
 
 .contenedor-modal {
     --bs-modal-width: 80vw;
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -490,7 +494,6 @@ ul {
         justify-content: center;
         gap: 2rem;
     }
-
 }
 .cat{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
