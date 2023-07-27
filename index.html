@@ -10,39 +10,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
-
 <body>
     <div id="app">
-        <header></header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-
-                <a class="navbar-brand">Huellitas 🐾 PetShop </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        {{ contadorCarrito }}
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-around col-12">
+            <div class="nav container-fluid col-12">
+                <div>
+                <a class="navbar-brand" href="#"><img src="./assets/images/img-nav-foot/logo-alt.png" class="rounded float-right img-fluid " alt="..."></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active" aria-current="page" href="#"></a> 
                         <a class="nav-link" href="./assets/pages/farmacia.html">Farmacia</a>
-                        <a class="nav-link" href="./assets/pages/juguetes.html">Juguetes</a>
+                        <a class="nav-link" href="./assets/pages/jueguetes.html">Juguetes</a>
+                        <a class="nav-link" href="./assets/pages/contacto.html">Contacto</a>
+                        <a class="nav-link bi bi-cart" href="./assets/pages/carrito.html" id="cart-link" >
+                            <span> {{ cantidadTotalProductos }} </span>
+                        </a>
                     </div>
                 </div>
 
             </div>
         </nav>
-
-        <main>
-            hola
-        </main>
-
+        <div class="layout d-flex flex-column align-items-center justify-content-center">
+            <header class="header col-12 rounded">
+                <div class="container">
+                    <h2 class="title">
+                        <span class="title-word title-word-1">Somos</span>
+                        <span class="title-word title-word-2">HUELLITAS</span>
+                    </h2>
+                </div>
+                <article class=" d-flex justify-content-evenly align-items-center">
+                    <div class="mb-3 col-5">
+                        <div class="card-body">
+                            <h4 class="rounded bienv">¡Bienvenido a Huellitas, donde las mascotas dejan su <span
+                                    class="texto-facha">huella en
+                                    nuestros corazones!</span> 🐾</h4>
+                                    <div class="col-5 col-xl-2 col-md-2">
+                        <a href="#" class="btn w-100">OFERTAS</a>
+                        <!-- <a href="./index.html"><button class="btn w-100">OFERTAS
+                            </button></a> -->
+                    </div>
+                </article>
+                
+            </header>
+    
+            <main class="d-flex flex-grow-1 align-items-center justify-content-center">
+                <article class="d-flex flex-wrap align-items-center justify-content-center">
+                    <p class="bienv2 col-9">
+                        Nuestra historia comenzó con un amor incondicional por los animales y el deseo de crear un espacio
+                        donde los dueños de mascotas como tú puedan encontrar todo lo que necesitan para mantener a sus
+                        leales amigos felices y saludables.
+                    </p>
+                    <div class=" d-flex justify-content-center">
+                        <img class="col-7 col-md-3 col-xl-3 rounded" src="./assets/images/Lucre pet.jpg" alt="gato_siames">
+                    </div>
+                </article>
+            </main>
+        
         <footer class="d-flex flex-column col-12 ">
             <div class="footer-container d-flex flex-column flex-md-row px-3">
-
                 <div class="footer-column col-md-3 col-sm-6">
                     <img src="./assets/images/img-nav-foot/favicon-alt.png" class=" img-fluid " alt="">
                 </div>
@@ -52,27 +82,25 @@
                     <p>Correo electrónico: huellitas@petshop.com</p>
                     <p>Dirección: Paraguay 2334 5 F</p>
                 </div>
-
                 <div class="footer-column col-md-2 col-sm-6 d-flex flex-column  justify-content-around">
-                    <ul class="social-media-icons d-flex justify-content-evenly">
-                        <li><a href="#" target="_blank" class="bi bi-facebook"></a></li>
-                        <li><a href="#" target="_blank" class="bi bi-twitter"></a></li>
-                        <li><a href="#" target="_blank" class="bi bi-instagram"></a></li>
-                    </ul>
+                <ul class="social-media-icons d-flex justify-content-evenly">
+                    <li><a href="#" target="_blank" class="bi bi-facebook"></a></li>
+                    <li><a href="#" target="_blank" class="bi bi-twitter"></a></li>
+                    <li><a href="#" target="_blank" class="bi bi-instagram"></a></li>
+                </ul>
                 </div>
             </div>
             <div class="footer-bottom mt-4">
-                <p>Derechos reservados &copy; 2023 Huellitas PetShop</p>
+            <p>Derechos reservados &copy; 2023 Huellitas PetShop</p>
             </div>
         </footer>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./assets/Js/main.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="assets/scripts/home.js"></script>
 </body>
 
 </html>

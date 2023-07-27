@@ -13,10 +13,7 @@ body {
     font-family: var(--fuente);
 }
 
-input,
-button,
-textarea,
-select {
+input, button,textarea,select {
     font: inherit;
 }
 
@@ -105,6 +102,113 @@ select {
 
     65% {
         color: var(--color-2)
+    .btn {
+        
+        background: none;
+        border: 2px solid #fcf9f3;
+        font-size: 15px;
+        color: #000414;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #805422;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000414;
+    }
+
+    .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #fcf9f3;
+        top: 50%;
+        transform: skewX(30deg) translate(-150%, -50%);
+        transition: all 0.5s;
+    }
+
+    .btn:hover {
+        background-color: #224E80;
+        color: #fcf9f3;
+        box-shadow: 0 2px 0 2px #80b9f0;
+    }
+
+    .btn:hover::before {
+        transform: skewX(30deg) translate(150%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .btn:active {
+        transform: scale(0.9);
+    }
+    .title-word {
+        animation: color-animation 4s linear infinite;
+    }
+    
+    .title-word-1 {
+        --color-1: #a1c4ec;
+        --color-2: #ca873b;
+        --color-3: #E4A9A8;
+    }
+
+    .title-word-2 {
+        --color-1: #ca873b;
+        --color-2: #ACCFCB;
+        --color-3: #a1c4ec;
+    }
+
+    @keyframes color-animation {
+        0%    {color: var(--color-1)}
+        32%   {color: var(--color-1)}
+        33%   {color: var(--color-2)}
+        65%   {color: var(--color-2)}
+        66%   {color: var(--color-3)}
+        99%   {color: var(--color-3)}
+        100%  {color: var(--color-1)}
+    }
+    
+      /* Here are just some visual styles. 🖌 */
+    
+    .container {
+        display: grid;
+        place-items: center;  
+        text-align: center;
+        height: 15vh
+    }
+    
+    .title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    .texto-facha{
+        background-image: linear-gradient(90deg, #e958ee, #571ae4);
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: background-size 800ms ease;
+    
+    }
+    .texto-facha:hover{
+        background-size: 100% 3px;
+    }
+    .bienv{
+        color: var(--claro);
+    }
+    .bienv2{
+        color: #fcf9f3!important;
+        font-size: 20px;
+        
+    }
+    .header{
+        
+        background-image: url(../images/fede\ pets2.jpg);
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: #000414;
     }
 
     66% {
@@ -170,10 +274,7 @@ textarea {
     resize: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3,h4 {
     font-family: var(--titulos);
 }
 
@@ -206,6 +307,11 @@ h4 {
 }
 
 .boton-agregar-carrito:hover {
+    background-color: var(--principal);
+    color: var(--claro);
+}
+
+.btn--carrito-comprar {
     background-color: var(--principal);
     color: var(--claro);
 }
@@ -247,7 +353,7 @@ header {
     height: 10vh;
 }
 
-nav {
+.navbar {
     background-color: #224e80;
 }
 
@@ -300,27 +406,73 @@ footer {
     height: 6rem;
     display: flex;
 
+.navbar{
+    border: none;
+    background-color: #224E80 !important;
+    /* color: #fcf9f3 ; */
+   /*  z-index: 1000; */
+}
+.nav-link{
+    color: #fcf9f3 ;
+}
+.navbar-toggler {
+    color: #fcf9f3;
+    background-color: #fcf9f3;
+    border-color: #fcf9f3;
+}
+
+.rounded{
+    width: 15rem;
+}
+
+footer {
+    min-height: 25vh;
+    background-color: #224E80;
+    padding: 20px 0;
+    color: #fcf9f3;
+    width: 100%;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .footer-column h3 {
+        font-family: sans-serif;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .footer-column p{
+        font-size: 11px;
+    }
+
+    .footer-column img {
+    height: 6rem;
+    display: flex;
     font-family: sans-serif;
     margin-bottom: 5px;
+
+    }
+    .footer-bottom{
+    font-size: 11px;
+    text-align: center;
+    border-top: solid 1px #5e90ec;
+    padding:15px;
+    }
+
+.bi-facebook, .bi-twitter, .bi-instagram {
+    color: var(--claro)
+}
+
+.bi-facebook:hover, .bi-twitter:hover, .bi-instagram:hover {
+    color: var(--secundario)
 }
 
 ul {
     list-style: none;
     padding: 0;
-}
-
-/* .social-media-icons img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  } */
-
-.footer-bottom {
-    background-color: #ddd;
-    color: #000414;
-    padding: 10px 0;
-    text-align: center;
-}
+ }
 
 .dropdown {
     list-style: none;
@@ -402,6 +554,7 @@ ul {
         gap: 2rem;
     }
 
+
     .boton-detalles {
         width: 20vw;
     }
@@ -414,6 +567,7 @@ ul {
         width: 20vw;
     }
 }
+
 
 @media only screen and (min-width: 1024px) {
     .card-jyf {
